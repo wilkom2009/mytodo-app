@@ -38,7 +38,6 @@ class TodosListComponent extends Component {
 
     deleteTodoClicked(id) {
         let username = AuthenticationService.getLoggedInUserName();
-        console.log(id + "  " + username)
         TodoDataService.deleteTodo(username, id)
             .then(
                 response => {
@@ -54,12 +53,10 @@ class TodosListComponent extends Component {
     }
 
     updateTodoClicked(id) {
-        console.log(id + " update ")
         this.props.history.push(`/todos/${id}`)
     }
 
     addTodoClicked(){
-        console.log("Add cliecked")
         this.props.history.push(`/todos/-1`)
     }
 

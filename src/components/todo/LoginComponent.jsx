@@ -34,7 +34,7 @@ class LoginComponent extends Component {
                         showSuccessMessage: false,
                         hasLoginFailed: true
                     })
-            })*/
+            }) */
 
 
             AuthenticationService.executeJwtAuthenticationService(this.state.username, this.state.password)
